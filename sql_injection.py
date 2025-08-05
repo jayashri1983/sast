@@ -5,7 +5,7 @@ def insecure_query(username):
     cursor = conn.cursor()
 
     # 🚨 This is a vulnerable query
-    query = f"SELECT * FROM users WHERE username = '{username}'"
+    query = f"SELECT * FROM users WHERE username = '{username}'" 
     cursor.execute(query)
 
     results = cursor.fetchall()
